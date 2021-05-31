@@ -1,0 +1,177 @@
+﻿@model Models.Weather.ListWeatherByProvince
+@{
+    Layout = null;
+    var bg = "background: rgb(65,65,65);background: linear-gradient(0deg, rgba(65,65,65,1) 34%, rgba(17,17,17,1) 100%);";
+}
+
+<style>
+    .modal-dialog {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #modal-del-editor {
+        max-width: 1000px;
+        margin: 1.75rem auto;
+    }
+
+    .item {
+        margin-bottom: 30px;
+    }
+
+    .section {
+        background-image: url("https://66.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png");
+        background-repeat: round;
+    }
+
+
+
+    .temp1 {
+        font-size: 31px;
+        position: relative;
+        top: -36px;
+    }
+
+    .temp {
+        font-size: 65px;
+    }
+
+    .modal-body {
+        padding: 0px;
+        color: #fff;
+    }
+
+    .modal-content {
+        font-family: "Avanta Garde";
+        background: rgb(85,85,85);
+        background: linear-gradient(0deg, rgba(85,85,85,1) 3%, rgba(51,51,51,1) 92%);
+    }
+
+    .padding-left {
+        padding-left: 10px;
+    }
+    /*.page-header {
+        padding-bottom: 0px;
+        margin: 0px;
+    }*/
+    .padding-bottom {
+        padding-bottom: 20px;
+    }
+</style>
+
+<div class="modal fade" id="modal-id" tabindex="-1" role="dialog" aria-labelledby="addContactLabel" style="margin-top:80px;" aria-hidden="true">
+    <div class="modal-dialog" style="width:1000px;" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div data-url-refresh="/administrator/category/CategoryEditor">
+                <div class="modal-body" style="padding:0px;font-family: cursive;font-family: cursive;">
+
+                    <div class="container-fluid">
+                        <div class="row" style="height: 284px;">
+                            @*@foreach (var item in Model.CurrenceWeater)
+                                {
+                                    <div class="col-md-4 offset-md-4 item">
+                                        <div class="weather">
+                                            <div class="current">
+                                                <div class="info">
+                                                    <div>&nbsp;</div>
+                                                    <div class="city"><small><small>Thành Phố:</small></small> @item.City</div>
+                                                    <div class="temp">@(item.TempMax - 273) <span id="temp">o</span><small>C</small></div>
+                                                    <div class="wind"><small><small>Gió:</small></small> @item.WindSpeed km/h</div>
+                                                    <div>&nbsp;</div>
+                                                </div>
+                                                <div class="icon">
+                                                    <span><i class='@item.icon' style='font-size: 70px; color: #1f1d24'></i></span>
+                                                </div>
+                                            </div>
+                                            <button onclick="openPopupForm('/Weather/WeatherDetail')">Xem chi tiet</button>
+                                        </div>
+                                    </div>
+                                }*@
+
+                            <div class="col-md-3" style="background: rgb(85,85,85);background: linear-gradient(0deg, rgba(85,85,85,1) 3%, rgba(51,51,51,1) 92%);padding:0px">
+                                @if (Model.Forecast6Days[0].day == 0)
+                                {<div style="background-color:#555555;padding:5px"><p class="padding-left" style="font-size:20px">Chủ nhật(@Model.Forecast6Days[0].Date)</p></div> }
+                            else
+                            {<div style="        background-color: #555555;padding: 5px"><p class="padding-left" style="font-size:20px">Thứ @(Model.Forecast6Days[0].day +1) (@Model.Forecast6Days[0].Date)</p></div>}
+
+                                <div><p class="padding-left" style="margin-top:20px;font-size:30px;">@Model.Forecast6Days[0].City</p></div>
+                                <div class="temp padding-left">@Model.Forecast6Days[0].Temp<span class="temp1">o</span><small>C</small><span><i class='fas fa-cloud-sun' style='font-size: 48px;color: red;padding-left: 25px;position: relative;top: -13px;'></i></span></div>
+                                <div class="padding-left padding-bottom">
+                                    <i class='fas fa-wind' style='font-size:26px'></i><span style="font-size: 20px;padding: 5px;">@Model.Forecast6Days[0].WindSpeed km/h</span>
+                                </div>
+                            </div>
+                            <div class="col-md-9" style="height: 100%;">
+                                <div class="row" style="height: 100%;">
+                                    @for (var i = 1; i < 4; i++)
+                                    {
+                                        if (i % 2 == 0)
+                                        {
+                                            bg = "background: rgb(85,85,85);background: linear-gradient(0deg, rgba(85,85,85,1) 3%, rgba(51,51,51,1) 92%);";
+                                        }
+                                        else
+                                        {
+                                            bg = "background: rgb(65,65,65);background: linear-gradient(0deg, rgba(65,65,65,1) 34%, rgba(17,17,17,1) 100%);";
+                                        }
+
+                                        <div class="col-md-2" style="@bg height: 100%;padding: 0px;text-align:center">
+                                            @if (Model.Forecast6Days[i].day == 0)
+                                            {<div style="background-color:#222222;padding:5px"><p class="padding-left" style="font-size:20px">Chủ nhật</p></div> }
+                                            else
+                                            {<div style="background-color:#222222;padding:5px"><p class="padding-left" style="font-size:20px">Thứ @(Model.Forecast6Days[i].day + 1)</p></div>}
+
+                                            <div style="margin-top: 45px;margin-bottom: 20px;"><span><i class='fas fa-cloud-sun' style='font-size:48px;color:red;padding-left: 25px;'></i></span></div>
+                                            <div style="font-size: 35px;">@Model.Forecast6Days[i].TempMax<span style="position: relative;font-size: 22px;top:-13px;padding-left: 5px;">o</span><small>C</small><div style="font-size: 25px;">@Model.Forecast6Days[i].TempMin<span style="position: relative;font-size: 20px;top: -12px;">o</span></div></div>
+                                        </div>
+                                    }
+                                    @for (var i = 4; i < 6; i++)
+                                    {
+                                        if (i % 2 == 0)
+                                        {
+                                            bg = "background: rgb(85,85,85);background: linear-gradient(0deg, rgba(85,85,85,1) 3%, rgba(51,51,51,1) 92%);";
+                                        }
+                                        else
+                                        {
+                                            bg = "background: rgb(65,65,65);background: linear-gradient(0deg, rgba(65,65,65,1) 34%, rgba(17,17,17,1) 100%);";
+                                        }
+                                        <div class="col-md-3" style="@bg;height: 100%;padding: 0px;text-align:center">
+                                            @if (Model.Forecast6Days[i].day == 0)
+                                            {<div style="background-color:#222222;padding:5px"><p class="padding-left" style="font-size:20px">Chủ nhật</p></div> }
+                                            else
+                                            {<div style="background-color:#222222;padding:5px"><p class="padding-left" style="font-size:20px">Thứ @(Model.Forecast6Days[i].day + 1)</p></div>}
+                                            @*<div style="background-color: #555555; padding: 5px"><p class="padding-left" style="font-size:20px">Thứ 3</p></div>*@
+                                            <div style="margin-top: 45px;margin-bottom: 20px;"><span><i class='fas fa-cloud-sun' style='font-size:48px;color:red;padding-left: 25px;'></i></span></div>
+                                            <div style="font-size: 35px;">@Model.Forecast6Days[i].TempMax<span style="position: relative;font-size: 22px;top:-13px;padding-left: 5px;">o</span><small>C</small><div style="font-size: 25px;">@Model.Forecast6Days[i].TempMin<span style="position: relative;font-size: 20px;top: -12px;">o</span></div></div>
+                                        </div>
+                                    }
+
+                                    @*<div class="col-md-3" style="background-color:#333333;height: 100%;padding: 0px;text-align:center">
+                                            <div style="background-color:#222222;padding:5px"><p class="padding-left" style="font-size:20px">Thứ 3</p></div>
+                                            <div style="margin-top: 45px;margin-bottom: 32px;"><span><i class='fas fa-cloud-sun' style='font-size:48px;color:red;padding-left: 25px;'></i></span></div>
+                                            <div style="font-size: 35px;">23<span style="position: relative;font-size: 22px;top:-13px;padding-left: 5px;">o</span><small>C</small><div style="font-size: 25px;">18<span style="position: relative;font-size: 20px;top: -12px;">o</span></div></div>
+                                        </div>*@
+                                    @*<div class="col-md-2" style="background-color:gold">
+                                            demo
+                                        </div>
+                                        <div class="col-md-2" style="background-color:yellow">
+                                            demo
+                                        </div>
+                                        <div class="col-md-3" style="background-color:bisque">
+                                            demo
+                                        </div>
+                                        <div class="col-md-3" style="background-color:darkcyan">
+                                            demo
+                                        </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

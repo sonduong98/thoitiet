@@ -1,0 +1,57 @@
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\Models.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\Models.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Models\obj\Debug\Models.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\obj\Debug\Models.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Lap trinh web\BTL\BTL_WEB\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\Models.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\Models.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\Models.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\Models.pdb
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Helpers.xml
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Mvc.xml
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.Razor.xml
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.xml
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\btl_web\BTL\BTL_WEB\Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.csproj.CopyComplete
+D:\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.dll
+D:\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.pdb
+D:\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\btl_web\BTL\BTL_WEB\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache

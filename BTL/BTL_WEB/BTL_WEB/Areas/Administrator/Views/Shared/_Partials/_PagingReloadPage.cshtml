@@ -1,0 +1,126 @@
+﻿
+@{
+    //tinh so ban ghi
+    //var size = 20;
+    int showRecoredPageBegin = 0;
+    int showRecoredPageEnd = 0;
+    if (Model.TotalCount == 0)
+    {
+        showRecoredPageBegin = 0;
+        showRecoredPageEnd = 0;
+    }
+    else if (Model.TotalCount <= Model.PageSize && Model.TotalCount > 0)
+    {
+        showRecoredPageBegin = 1;
+        showRecoredPageEnd = Model.TotalCount;
+    }
+    else if (Model.TotalCount > Model.PageSize && Model.PageIndex * Model.PageSize > Model.TotalCount)
+    {
+        showRecoredPageBegin = (Model.PageIndex - 1) * Model.PageSize + 1;
+        showRecoredPageEnd = Model.TotalCount;
+    }
+    else
+    {
+        showRecoredPageBegin = (Model.PageIndex - 1) * Model.PageSize + 1;
+        showRecoredPageEnd = Model.PageIndex * Model.PageSize;
+    }
+
+    var from = Model.PageIndex - 2;
+    if (from < 1) { from = 1; }
+    var to = from + 5;
+    if (to > Model.TotalPages) { to = Model.TotalPages; }
+
+    var path = Context.Request.Url.ToString();
+    var index = path.IndexOf("pageIndex=");
+    if (index > 0)
+    {
+        path = path.Substring(0, index - 1);
+    }
+    path += path.Contains("?") ? "&pageIndex=" : "?pageIndex=";
+    var req = Context.Request;
+}
+
+@*@if (Model.TotalCount > 0)
+{
+    <div class="row rowi" id="pag">
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <div id="datatable_info" class="dataTables_info" role="status" aria-live="polite">
+
+                Showing results from @showRecoredPageBegin - @showRecoredPageEnd of the total @Model.TotalCount
+            </div>
+        </div>
+        @if (Model.TotalPages > 1)
+        {
+            <div class="col-md-7 col-sm-7 col-xs-12" data-bind="visible: TotalPages() > 1" style="">
+                <nav aria-label="Page navigation">
+
+                    <ul class="pagination ajax-pagination ">
+                        @if (Model.PageIndex > 1)
+                        {
+                            <li><a onclick="reloadGridPage(@(Model.PageIndex-1))"><i class="fa fa-angle-left"></i></a></li>
+                        }
+
+                        @for (var i = from; i <= to; i++)
+                        {
+                            if (i == Model.PageIndex)
+                            {
+                                <li><a onclick="reloadGridPage(@i)" style="background-color: #455b69;color:#fff;">@i</a></li>
+                                continue;
+                            }
+                            <li><a onclick="reloadGridPage(@i)" class="a-paging">@i</a></li>
+                        }
+                        @if (Model.PageIndex < to)
+                        {
+                            <li><a onclick="reloadGridPage(@(Model.PageIndex+1))"><i class="fa fa-angle-right"></i></a></li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <span>There are no result</span>
+}*@
+@if (Model.TotalCount > 0)
+{
+    <div class="row">
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <div id="datatable_info" class="dataTables_info" role="status" aria-live="polite">
+
+                Showing results from @showRecoredPageBegin - @showRecoredPageEnd of the total @Model.TotalCount
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12">
+            <div class="container paging">
+                <ul class="pagination">
+
+                    @if (Model.PageIndex > 1)
+                    {
+                        <li class="page-item"><a class="page-link" onclick="reloadGridPage(@(Model.PageIndex - 1))"><i class="fa fa-angle-left"></i></a></li>
+                    }
+
+                    @for (var i = from; i <= to; i++)
+                    {
+                        if (i == Model.PageIndex)
+                        {
+                            <li class="page-item"><a class="page-link" onclick="reloadGridPage(@i)" style="background-color: #455b69;color:#fff;">@i</a></li>
+                            continue;
+                        }
+                        <li class="page-item"><a onclick="reloadGridPage(@i)" class="a-paging page-link">@i</a></li>
+                    }
+                    @if (Model.PageIndex < to)
+                    {
+                        <li class="page-item"><a class="page-link" onclick="reloadGridPage(@(Model.PageIndex + 1))"><i class="fa fa-angle-right"></i></a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+}
+else
+{
+    <span>There are no result</span>
+}

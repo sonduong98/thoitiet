@@ -1,0 +1,112 @@
+﻿@model Models.User.UserViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+    var i = 1;
+    if (Model.PageIndex > 1)
+    {
+        i = 10 * (Model.PageIndex - 1) + 1;
+    }
+}
+
+<style>
+    body::-webkit-scrollbar, .modal::-webkit-scrollbar {
+        width: 1px;
+        background-color: #F5F5F5;
+    }
+
+    #modal-placeholder .modal, #modal-placeholder2 .modal {
+        overflow-y: scroll;
+    }
+</style>
+
+
+
+
+
+<div class="dashboard-ecommerce">
+    <div class="container-fluid dashboard-content ">
+        <!-- ============================================================== -->
+        <!-- pageheader  -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                <div class="page-header">
+                    <h2 class="pageheader-title">User </h2>
+                    <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+                    <div class="page-breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/Administrator/Category/Index" class="breadcrumb-link">User</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Index</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-xl-3 text-right">
+                <a class="btn btn-primary" onclick="openPopupForm('/administrator/User/UserEditor')" style="color:black;"><i class="fa fa-plus"></i> Add</a>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end pageheader  -->
+        <!-- ============================================================== -->
+        <div class="ecommerce-widget">
+            <div id="divList" class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <h2>Search</h2>
+                                <div class="filter-container filter_area">
+                                    <div class="btn-group btn-group-filter">
+                                        <div class="search-container">
+                                            <input type="text" name="keyword" placeholder="Enter search keywords ..." class="form-control form-large search-input">
+                                        </div>
+                                        <div class="btn-group btn-search">
+                                            <button onclick="searchClick()" class="btn btn-primary btn-filter search-face"><i class="fa fa-search"></i> Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-url-refresh=@HttpContext.Current.Request.Path + @HttpContext.Current.Request.QueryString.ToString()>
+                                    <div class="table-responsive list-news">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:30px;">No</th>
+                                                    <th style="min-width: 120px;">User Name</th>
+                                                    <th>First Name</th>
+                                                    <th>LastName</th>
+                                                    <th>Update date</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model.ListUsers)
+                                                {
+                                                <tr>
+                                                    <td>@i</td>
+                                                    <td>@item.UserName</td>
+                                                    <td>@item.FirstName</td>
+                                                    <td>@item.LastName</td>
+                                                    <td>@item.UpdatedDate</td>
+                                                    <td class="text-center" style="width: 150px;">
+                                                        <button onclick="openPopupForm('/administrator/User/UserEditor/@item.Id')" data-id="@item.Id" class="btn btn-primary edit1" title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="btn btn-danger" onclick="deleteItem('/administrator/User/Delete/@item.Id')" title="Delete"><i class="fa fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                    i++;
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    @Html.Partial("~/Areas/Administrator/Views/Shared/_Partials/_PagingReloadPage.cshtml")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll.config
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\Entities.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.dll
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.dll
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.xml
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Lap trinh web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.xml
+E:\Lap trinh web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+E:\Lap trinh web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csproj.CopyComplete
+E:\Lap trinh web\BTL\BTL_WEB\Entities\obj\Debug\Entities.dll
+E:\Lap trinh web\BTL\BTL_WEB\Entities\obj\Debug\Entities.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll.config
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll.config
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.dll
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\Entities.pdb
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.dll
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.dll
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.xml
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\btl_web\BTL\BTL_WEB\Entities\bin\Debug\EPPlus.xml
+D:\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.dll
+D:\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.pdb
+D:\btl_web\BTL\BTL_WEB\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache

@@ -1,0 +1,82 @@
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Business.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Business.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Business\obj\Debug\Business.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\obj\Debug\Business.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Business.dll.config
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Models.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Entities.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll.config
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Models.pdb
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\obj\Debug\Business.csprojAssemblyReference.cache
+E:\Lap trinh web\BTL\BTL_WEB\Business\obj\Debug\Business.csproj.CopyComplete
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.xml
+E:\Lap trinh web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.dll.config
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Models.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll.config
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\Models.pdb
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.dll
+C:\Users\DUONG\Documents\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.pdb
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.dll.config
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Business.pdb
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Models.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.pdb
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Entities.dll.config
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\Models.pdb
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Mvc.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Razor.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.Razor.xml
+D:\btl_web\BTL\BTL_WEB\Business\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.csprojAssemblyReference.cache
+D:\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.csproj.CopyComplete
+D:\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.dll
+D:\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.pdb
+D:\btl_web\BTL\BTL_WEB\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache

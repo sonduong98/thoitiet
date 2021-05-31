@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+}
+    <div class="dashboard-ecommerce">
+        <div class="container-fluid dashboard-content ">
+            <!-- ============================================================== -->
+            <!-- pageheader  -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header">
+                        <h2 class="pageheader-title">E-commerce Dashboard Template </h2>
+                        <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">E-Commerce Dashboard Template</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end pageheader  -->
+            <!-- ============================================================== -->
+            <div class="ecommerce-widget">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <h2>Search</h2>
+                                <div class="filter-container filter_area">
+                                    <div class="btn-group btn-group-filter">
+                                        <div class="search-container">
+                                            <input type="text" asp-for="keyWord" placeholder="Enter search keywords ..." class="form-control form-large search-input">
+                                        </div>
+                                        <div class="btn-group btn-search">
+                                            <button onclick="searchClick()" class="btn btn-primary btn-filter search-face"><i class="fa fa-search"></i> Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-url-refresh="a">
+                                    <div class="table-responsive list-news">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:30px;">No</th>
+                                                    <th>Title</th>
+                                                    <th style="min-width: 120px;">Category</th>
+                                                    <th>Start Date</th>
+                                                    <th>Status</th>
+                                                    <th style="width: 100px;">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Nguyen Son Duong</td>
+                                                    <td>Dep trai</td>
+                                                    <td>20/01/98</td>
+                                                    <td>Active</td>
+                                                    <td style="width: 150px;">
+                                                        <a href="/administrator/Post/Edit/2" class="btn btn-primary edit1" title="Edit"><i class="fa fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-danger del" title="Delete"><i class="fa fa-trash"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                @*@foreach (var item in Model.ListPosts)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@item.Title</td>
+                <td>@item.NameCate</td>
+                <td>@item.StartDate</td>
+                @if (@item.Status == "Active")
+                {
+                    <td><span class="btn btn-xs btn-primary">@item.Status</span></td>
+                }
+                else
+                {
+                    <td><span class="btn btn-xs btn-warning">@item.Status</span></td>
+                }
+                <td style="width: 100px;">
+                    <a href="/administrator/Post/Edit/@item.Id?backlink=@Html.GetUri()" class="btn btn-primary edit1" title="Edit"><i class="fa fa-edit"></i></a>
+                    <a href="#" onclick="deleteItem('/administrator/Post/Delete/@item.Id')" class="btn btn-danger del" title="Delete"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            i++;
+        }*@
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    @*<partial name="~/Areas/Administrator/Views/Shared/_Partials/_PagingReloadPage.cshtml" />*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,183 @@
+﻿@model Models.Weather.ListWeatherByProvince
+@using BTL_WEB.Constant;
+@{
+    var pageInfo = ViewData["PageInfo"] as Models.Layout.GetForLayout;
+    ViewBag.Title = "Weather";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<link href="../DemoLayout/layout.css" rel="stylesheet" />
+<style>
+    .item {
+        margin-bottom: 30px;
+    }
+
+    .section {
+        background-image: url("https://66.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png");
+        background-repeat: round;
+    }
+
+    .weather {
+        display: flex;
+        flex-flow: column wrap;
+        box-shadow: 0px 1px 10px 0px #cfcfcf;
+        overflow: hidden;
+    }
+
+        .weather .current {
+            display: flex;
+            flex-flow: row wrap;
+            background-repeat: repeat-x;
+            color: white;
+            padding: 20px;
+            text-shadow: 1px 1px #F68D2E;
+            border-radius: 6%;
+        }
+
+            .weather .current .info {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                flex-grow: 2;
+            }
+
+                .weather .current .info .city {
+                    font-size: 26px;
+                }
+
+                .weather .current .info .temp {
+                    font-size: 56px;
+                }
+
+                .weather .current .info .wind {
+                    font-size: 24px;
+                }
+
+            .weather .current .icon {
+                text-align: center;
+                font-size: 64px;
+                flex-grow: 1;
+            }
+
+        .weather .future {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+            .weather .future .day {
+                flex-grow: 1;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .weather .future .day:hover {
+                    color: #fff;
+                    background-color: #F68D2E;
+                }
+
+                .weather .future .day h3 {
+                    text-transform: uppercase;
+                }
+
+                .weather .future .day p {
+                    font-size: 28px;
+                }
+
+    #temp {
+        font-size: 30px;
+        position: relative;
+        top: -20px;
+    }
+
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+</style>
+<button class="demo" style="color:red">alo</button>
+
+<div class="page-header" style="padding-bottom: 80px; margin:0px;">
+    <div class="page-header-bg" style="background-image: url('/Uploads/winter-facebook-cover-5 .jpg');background-repeat:round;" data-stellar-background-ratio="0.5"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 text-center">
+                <h1 class="text-uppercase">FORECAST WEATHER</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /HEADER -->
+<!-- SECTION -->
+
+<div class="section" style="font-family: cursive;">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-md-7 input-group md-form form-sm form-2 pl-0" style="margin:auto">
+                <input class="form-control my-0 py-1 lime-border search-input" type="text" placeholder="Search" aria-label="Search">
+                <div class="btn-group btn-search">
+                    <button onclick="searchClick1()" class="btn btn-primary btn-filter search-face"><i class="fa fa-search"></i> Tim kiem</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" style="margin:auto">
+
+            @foreach (var item in Model.CurrenceWeater)
+            {
+
+                var urlImg = "/Uploads/" + item.img;
+                <div class="col-md-4 item">
+                    <div class="weather" style="background-image: url(@urlImg);background-repeat: round;    border-radius: 7%;">
+                        <div class="current">
+                            <div class="info">
+                                <div>&nbsp;</div>
+                                <div class="city"><small><small>Thành Phố:</small></small> @item.City</div>
+                                <div class="temp">@(item.TempMax - 273) <span id="temp">o</span><small>C</small></div>
+                                <div class="wind"><small><small>Gió:</small></small> @item.WindSpeed km/h</div>
+                                <div>&nbsp;</div>
+                            </div>
+                            <div class="icon">
+                                <span><i class='@item.icon' style='font-size: 70px; color: #697bbb'></i></span>
+                            </div>
+                        </div>
+                        <button onclick="openPopupForm('/Weather/WeatherDetail?city=@item.City')">Xem chi tiet</button>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Notification</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete this item?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="modal-del" onclick="requestDelete()" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<script>
+    $(".demo").click(function () {
+        $("#exampleModal").modal('show');
+    });
+</script>
